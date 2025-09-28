@@ -25,3 +25,12 @@ b. Reasoning during Execution.
 5. Adaptability: Agent's ability to modify its plans, strategies or actions in response to unexpected conditions.
 
 6. Context awareness: agent's ability to understand, retrain and utilize relevant information form ongoing task, past interactions, user preferences, and env ues to make better decision throughout a multi step process. Short Term Memory and Long Term Memory.
+
+
+Agentic AI Components:
+
+1. Brain
+2. Orchestrator
+3. Tools
+4. Memory
+5. Supervisor
