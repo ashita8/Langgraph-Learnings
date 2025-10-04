@@ -47,3 +47,12 @@ Challenge with langchain:
 4. Fault tolerance: long riunning workflow rises faults and langchain do not provide any fault tolerance supports. Langgraph gives you option to retry and handle small level fault and recovery for long running fault like server down. example user checkpointer to save sates.
 5. Human in the loop.
 6. Nested workflows: adding subgraphs.
+7. Observability: by directly integrating Langsmith.
+
+
+Types of Workflows
+1. Prompt chaining.
+2. Routing
+3. Parallellization.
+4. Orchestrator Workers.
+5. Evaluatior Opimizer.
