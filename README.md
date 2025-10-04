@@ -34,3 +34,16 @@ Agentic AI Components:
 3. Tools
 4. Memory
 5. Supervisor
+
+
+Agent and workflow difference:
+1. Workflows are systems where LLMs and tools are orchestrated through predefined code paths.
+2. Agent are systems where LLMs dyamically direct their own processes and tool usage maintaining control over how they accomplish tasks.
+
+Challenge with langchain:
+1. We need to write Lots of Glue code for complex agentic workflows.
+2. Langgraph provide handling state internally which is maintained throughout the workflow which langchain do not provide.
+3. Event driven Execution: langchain is sequential but langgraph can pause the workflow wait for trigger and move on.
+4. Fault tolerance: long riunning workflow rises faults and langchain do not provide any fault tolerance supports. Langgraph gives you option to retry and handle small level fault and recovery for long running fault like server down. example user checkpointer to save sates.
+5. Human in the loop.
+6. Nested workflows: adding subgraphs.
