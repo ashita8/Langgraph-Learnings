@@ -5,10 +5,10 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
 from dotenv import load_dotenv
-
+import os
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash",google_api_key="AIzaSyA9sB-9wkCrFEPz0zZytcsrvb9pKtBztlE")
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash",google_api_key=os.getenv("GOOGLE_API_KEY"))
 
 class ChatState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages]
